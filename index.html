@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Speech Examples</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            background: #f7f7f8;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+            font-weight: 650;
+        }
+
+        header p {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .examples {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .speaker {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .speaker span {
+            color: #222;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            display: inline-block;
+            font-size: 12px;
+            padding: 5px 9px;
+            border-radius: 6px;
+            background: #f0f0f0;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        audio {
+            width: 100%;
+            height: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .examples {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 30px 16px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>ProsodyLM</h1>
+        <p><i>complex emotions - for example: anxious, nervous etc.</i></p>
+    </header>
+
+    <main class="examples">
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Fear</div>
+
+            <div class="text">
+                "I think someone is outside the house,” he said fearfully.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_fear_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+        <div class="card">
+            <div class="speaker">speaker embedding: <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Calm</div>
+
+            <div class="text">
+                "I think someone is outside the house,” he said calmly.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_calm_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Anger</div>
+
+            <div class="text">
+                “I can't believe you did this to me,” she said furiously.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_anger_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Sad</div>
+
+            <div class="text">
+                “I can't believe you did this to me,” she said sadly.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_sad_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Nervous</div>
+
+            <div class="text">
+                “Everything is going to be okay,” he said nervously.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_nervous_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Confident</div>
+
+            <div class="text">
+                “Everything is going to be okay,” he said confidently.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_confident_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Excitement</div>
+
+            <div class="text">
+                “We finally made it,” she said excitedly.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_excited_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Disappointment</div>
+
+            <div class="text">
+                “We finally made it,” she said disappointedly.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_disappointed_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Affection</div>
+
+            <div class="text">
+                “It's good to see you again,” he said warmly.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_affection_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <div class="speaker">
+                speaker embedding : <span>&lt;|spk_tk_350|&gt;</span>
+            </div>
+
+            <div class="label">Contempt</div>
+
+            <div class="text">
+                “It's good to see you again,” he said coldly.
+            </div>
+
+            <audio controls preload="metadata">
+                <source src="audio/spk_tk_350_contempt_example.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>
